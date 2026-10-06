@@ -204,13 +204,13 @@ footer{flex-direction:column;gap:1rem;text-align:center}
 
 <!-- WELCOME -->
 <div id="welcome" class="screen active">
-  <div class="eyebrow fade-in">AR-001 Compliant &middot; Diagnostic Instrument</div>
+  <div class="eyebrow fade-in">Diagnostic Instrument &middot; Runs in your browser</div>
   <h1 class="fade-in fade-in-d1" style="margin-bottom:2rem">Coherence Diagnostic</h1>
-  <p class="fade-in fade-in-d2" style="color:var(--text-primary);font-size:1rem">Every organization has structural patterns that shape how decisions get made, how information flows, and how authority is distributed. Most of these patterns are invisible &mdash; until they aren&rsquo;t.</p>
-  <p class="fade-in fade-in-d2">This diagnostic surfaces those patterns. Sixteen scenario-based questions. No right or wrong answers. About five minutes.</p>
+  <p class="fade-in fade-in-d2" style="color:var(--text-primary);font-size:1rem">A short read on how decisions get made in an organization you know. Five questions about you and the organization, then sixteen scenarios about ownership, authority, information, and follow-through. About five minutes.</p>
+  <p class="fade-in fade-in-d2">The scenarios cover eight of the seventeen failure modes in the Coherence taxonomy: the ones a person can report on from their own experience. You get a profile of your answers, the patterns they point to, and one question to take into your next staff meeting for each.</p>
 
   <div class="thesis-block fade-in fade-in-d3">
-    <p>Making the invisible, visible. No blame &mdash; just physics.</p>
+    <p>This is a reading of your answers, not a verdict on the organization. Use it to put names to what you are already seeing and to decide what to look at next.</p>
   </div>
 
   <div style="margin:2.5rem 0 1.5rem" class="fade-in fade-in-d3">
@@ -222,7 +222,7 @@ footer{flex-direction:column;gap:1rem;text-align:center}
 
   <div class="privacy-box fade-in fade-in-d3">
     <h3>Your data stays on your device</h3>
-    <p>All responses are processed locally in your browser. Nothing is sent to any server. No account required. No cookies. No tracking.</p>
+    <p>Your answers are processed in your browser and are not sent to any server. No account, no cookies. The site keeps a cookieless count of page views; it never sees what you answer. <a href="/privacy" style="color:var(--accent)">Privacy</a></p>
   </div>
 
   <div style="margin-top:2.5rem" class="fade-in fade-in-d4">
@@ -260,7 +260,7 @@ footer{flex-direction:column;gap:1rem;text-align:center}
 <div id="results" class="screen">
   <div class="eyebrow" style="text-align:center">Diagnostic Results</div>
   <h1 class="results-title" id="resultsTitle">Your Coherence Profile</h1>
-  <div class="results-subtitle">Based on 16 structural indicators</div>
+  <div class="results-subtitle">A reading of your sixteen answers, covering eight of the seventeen failure modes</div>
   <div class="triangle-container" id="triangleContainer"></div>
   <div class="interpretation-box" id="interpretation"></div>
   <div id="activeFMs"></div>
@@ -269,13 +269,13 @@ footer{flex-direction:column;gap:1rem;text-align:center}
   <div id="dormantFMs"></div>
   <div id="upsellBox"></div>
   <div class="privacy-box" style="margin-top:2rem">
-    <p style="text-align:center;margin-bottom:0">These results exist only on your device. Nothing was sent to any server.</p>
+    <p style="text-align:center;margin-bottom:0">Your answers and these results exist only on your device. Nothing you entered was sent to any server.</p>
   </div>
   <div class="actions">
     <button class="cta-button secondary" onclick="retake()">Retake Diagnostic</button>
   </div>
   <div class="closing-line">
-    &copy; 2026 Decision &amp; Responsibility Infrastructure&trade; &middot; Greenbaum Labs
+    &copy; 2026 Decision &amp; Responsibility Infrastructure&reg; &middot; Greenbaum Labs
   </div>
 </div>
 
@@ -284,7 +284,7 @@ footer{flex-direction:column;gap:1rem;text-align:center}
 <!-- FOOTER -->
 <footer>
   <div class="footer-l">DRI Practice</div>
-  <div class="footer-r"><a href="https://justingreenbaum.com">Founder</a> &middot; <a href="https://greenbaumlabs.com">Labs</a></div>
+  <div class="footer-r"><a href="https://justingreenbaum.com">Founder</a> &middot; <a href="https://greenbaumlabs.com">Labs</a> &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a></div>
 </footer>
 
 <script>
@@ -302,14 +302,14 @@ function selectLens(l,el){
 
 // ===== DATA =====
 const FM={
-'FM-01':{name:'Responsibility Compression',tier:'foundational',pv:'authority',cascade:['FM-09'],what:"The people closest to problems can describe them precisely but can\u2019t fix them without approval. Decisions queue behind senior calendars. Frontline teams develop learned helplessness\u200a\u2014\u200athey stop trying to resolve things and start routing everything upward.",oneQ:"When someone closest to a problem doesn\u2019t have the authority to resolve it, where does it go\u200a\u2014\u200aand how long does it take to get there?"},
-'FM-03':{name:'Responsibility Without Authority',tier:'foundational',pv:'authority',cascade:['FM-15'],what:"Job postings promise autonomy and ownership. Employee reviews describe rigid approval chains. People with \u201Cowner\u201D in their title spend most of their time requesting permission. The gap between the stated culture and the lived culture widens quietly.",oneQ:"For the last person we asked to \u201Cown\u201D something\u200a\u2014\u200adid we also give them the authority to make the decisions that ownership requires?"},
+'FM-01':{name:'Responsibility Compression',tier:'foundational',pv:'authority',cascade:['FM-09'],what:"The people closest to problems can describe them precisely but can\u2019t fix them without approval. Decisions queue behind senior calendars. Frontline teams stop trying to resolve things and route everything upward.",oneQ:"When someone closest to a problem doesn\u2019t have the authority to resolve it, where does it go\u200a\u2014\u200aand how long does it take to get there?"},
+'FM-03':{name:'Responsibility Without Authority',tier:'foundational',pv:'authority',cascade:['FM-15'],what:"Job postings promise autonomy and ownership. Employee reviews describe rigid approval chains. People with \u201Cowner\u201D in their title spend most of their time requesting permission. The gap between the stated culture and the lived culture widens.",oneQ:"For the last person we asked to \u201Cown\u201D something\u200a\u2014\u200adid we also give them the authority to make the decisions that ownership requires?"},
 'FM-04':{name:'Metric Shadowing',tier:'mechanism',pv:'truth',cascade:['FM-14'],what:"Dashboards are green. Customer complaints tell a different story. Teams optimize for the metric, not the outcome the metric was supposed to represent. \u201CWe hit our numbers\u201D becomes a separate conversation from \u201Chow are we actually doing.\u201D",oneQ:"What important thing is happening in this organization right now that none of our metrics would show us?"},
 'FM-05':{name:'Normalized Workarounds',tier:'mechanism',pv:'truth',cascade:[],what:"New hires are taught the \u201Creal\u201D way to get things done within their first week. Critical workflows run on personal spreadsheets, side Slack channels, or tools IT doesn\u2019t know about. Nobody maintains the official process documentation because nobody uses it.",oneQ:"If we turned off every unofficial tool and side channel tomorrow, what would break?"},
 'FM-07':{name:'Coordination Decay',tier:'foundational',pv:'continuity',cascade:[],what:"Ask five people who owns a key initiative and you get five answers. Handoffs between teams fail routinely\u200a\u2014\u200a\u201CI did my part\u201D is a standard defense. Buffer time for coordination overhead is baked into every project plan because everyone knows things will fall through the cracks.",oneQ:"For our most important cross-functional initiative\u200a\u2014\u200awho is the single person accountable for the outcome, not just their team\u2019s piece of it?"},
-'FM-09':{name:'Over-Escalation',tier:'mechanism',pv:'authority',cascade:[],what:"\u201CI wanted to make sure you were aware\u201D is the organization\u2019s most common phrase. Escalation isn\u2019t about getting better judgment\u200a\u2014\u200ait\u2019s about making sure someone more senior is on the hook if things go wrong.",oneQ:"Of the last ten decisions that reached senior leadership, how many genuinely required their judgment versus their air cover?"},
+'FM-09':{name:'Over-Escalation',tier:'mechanism',pv:'authority',cascade:[],what:"\u201CI wanted to make sure you were aware\u201D is the organization\u2019s most common phrase. Escalation stops being a way to get better judgment and becomes a way to make sure someone more senior is on the hook if things go wrong.",oneQ:"Of the last ten decisions that reached senior leadership, how many genuinely required their judgment versus their air cover?"},
 'FM-14':{name:'Narrative Collapse',tier:'terminal',pv:'truth',cascade:['FM-15'],what:"The investor deck describes a different company than the one employees experience. Leadership communications feel scripted. People internally joke about the gap between the official narrative and their reality.",oneQ:"If we asked ten people across different levels \u201Cwhat is our strategy\u201D\u200a\u2014\u200ahow many different answers would we get?"},
-'FM-15':{name:'Trust Exhaustion',tier:'terminal',pv:'truth',cascade:[],what:"New initiatives are met with \u201Clet\u2019s see if this one sticks.\u201D People do what\u2019s asked but don\u2019t volunteer ideas or improvements. The most talented people leave quietly\u200a\u2014\u200anot in protest, but in resignation.",oneQ:"When was the last time someone pushed back on a decision not because they were difficult, but because they cared enough to fight for a better outcome?"},
+'FM-15':{name:'Trust Exhaustion',tier:'terminal',pv:'truth',cascade:[],what:"New initiatives are met with \u201Clet\u2019s see if this one sticks.\u201D People do what\u2019s asked but don\u2019t volunteer ideas or improvements. The most capable people leave without a fight.",oneQ:"When was the last time someone pushed back on a decision not because they were difficult, but because they cared enough to fight for a better outcome?"},
 };
 // Context questions adapt based on lens
 function getCQ(){
@@ -410,22 +410,27 @@ function compute(){
   act.forEach(f=>(FM[f.code].cascade||[]).forEach(t=>cas.push({from:f.code,fn:f.name,to:t,tn:FM[t].name})));
   let interp;
   if(lens==='pre-entry'){
-    if(ov>=.80)interp='The organization shows strong structural coherence. The incoming leader would inherit well-aligned decision authority, information flow, and institutional memory.';
-    else if(ov>=.60)interp='Solid foundations with friction in specific areas. The incoming leader should understand these patterns before accepting. They are manageable but should be named upfront.';
-    else if(ov>=.40)interp='Significant structural challenges. The incoming leader would inherit conditions that constrain execution regardless of capability. Consider whether restructuring should precede the hire.';
-    else interp='Critical structural gaps. These conditions have likely contributed to previous leadership turnover. The incoming leader would face systemic headwinds that individual performance cannot overcome.';
+    if(ov>=.80)interp='On what you have seen so far, decision authority, information flow, and institutional memory look aligned. Worth confirming in your conversations before you accept, since outside views tend to run optimistic.';
+    else if(ov>=.60)interp='Your answers point to solid foundations with friction in specific areas. Name the patterns below in your conversations with the hiring team; how they respond will tell you as much as the answers.';
+    else if(ov>=.40)interp='Your answers point to conditions that would constrain execution regardless of who takes the role. Before accepting, find out which of these the organization already recognizes and what authority the role actually carries.';
+    else interp='Your answers point to gaps across several dimensions at once. Treat that as a set of questions for the hiring team rather than a conclusion. An outside view is partial by nature, but a pattern you can see from outside is usually sharper inside.';
   } else if(lens==='investor'){
-    if(ov>=.80)interp='The organization shows strong structural coherence. Decision-making infrastructure supports the investment thesis.';
-    else if(ov>=.60)interp='Solid foundations with structural friction in specific areas. These patterns are worth factoring into integration planning and leadership installation timelines.';
-    else if(ov>=.40)interp='Significant structural challenges that financial due diligence would not surface. Execution risk is higher than the financials suggest. Post-acquisition, these conditions will constrain the thesis.';
-    else interp='Critical structural gaps across multiple dimensions. Execution depends on individual heroics rather than organizational infrastructure. This represents material risk to any investment thesis that requires operational improvement.';
+    if(ov>=.80)interp='On the evidence you have, the decision structure looks able to carry an operating thesis. Worth confirming with management conversations, since public evidence lags what is happening inside.';
+    else if(ov>=.60)interp='The evidence points to solid foundations with friction in specific areas. Factor the patterns below into integration planning and into how quickly new leadership can be effective.';
+    else if(ov>=.40)interp='The evidence points to structural conditions that financial diligence would not surface and that would constrain any thesis built on operating improvement. Each pattern below is a specific question for management.';
+    else interp='The evidence points to gaps across several dimensions at once, which usually means execution is running on individual effort rather than structure. Treat the patterns below as diligence questions rather than conclusions.';
   } else {
-    if(ov>=.80)interp='Your organization shows strong structural coherence. Decision authority, information flow, and institutional memory are well-aligned.';
-    else if(ov>=.60)interp='Solid foundations with friction in specific areas. The patterns below are worth investigating before they compound.';
-    else if(ov>=.40)interp='Significant structural challenges. Multiple patterns are active and likely reinforcing each other. The questions below can help you start naming what people already feel.';
-    else interp='Critical coherence gaps across multiple dimensions. These patterns are likely visible in daily operations. The good news: naming them is the first step to changing them.';
+    if(ov>=.80)interp='Your answers describe an organization where decision authority, information flow, and institutional memory are holding together. If something still feels off, the lenses cover ground these sixteen questions do not.';
+    else if(ov>=.60)interp='Your answers point to solid foundations with friction in specific areas. The patterns below are the places to look first, before they start feeding each other.';
+    else if(ov>=.40)interp='Your answers point to several patterns at once, and patterns like these tend to reinforce each other. Start with the question under each one; it is written to be asked out loud.';
+    else interp='Your answers point to strain across all three dimensions. Patterns like these are usually already felt in daily work and rarely discussed as structure. Naming them is the first step; the questions below are a way to do that.';
   }
-  return{ov,vx,fs,act,em:fs.filter(f=>f.status==='emerging'),dor:fs.filter(f=>f.status==='dormant'),cas,interp}
+  const emg=fs.filter(f=>f.status==='emerging');
+  if(!act.length){
+    if(emg.length)interp='Nothing in your answers reached the active threshold. The patterns under Worth watching are the ones to keep an eye on; each links to a full description and a question to ask.';
+    else interp='Nothing in your answers reached the active or emerging threshold on these eight patterns. Either the organization is in good shape here, or what you are noticing lives in one of the nine patterns this short assessment does not cover. The full taxonomy and the lenses are the next place to look.';
+  }
+  return{ov,vx,fs,act,em:emg,dor:fs.filter(f=>f.status==='dormant'),cas,interp}
 }
 
 // ===== RESULTS =====
@@ -463,7 +468,7 @@ function showResults(){
   let h='';
   var actTitle=lens==='pre-entry'?'What the incoming leader would inherit':lens==='investor'?'What financial due diligence does not show':'What your organization is telling you';
   if(p.act.length){h+='<div class="section-title">'+actTitle+'</div>';
-  p.act.forEach(f=>{const d=FM[f.code];h+=`<div class="fm-card active-card"><div class="fm-card-inner"><div class="fm-header"><span class="fm-code">${f.code}</span><span class="badge badge-active">Active</span></div><div class="fm-name">${f.name}</div><div class="fm-label">What this looks like</div><div class="fm-body">${d.what}</div><div class="question-box"><div class="fm-label">One question to ask Monday</div><p>\u201C${d.oneQ}\u201D</p></div>${d.cascade.length?'<div class="cascade-note">If unaddressed, this pattern feeds into '+d.cascade.map(c=>FM[c].name).join(' and ')+'.</div>':''}<a href="https://dripractice.com/fm/${f.code.toLowerCase()}" class="deeper-link" target="_blank">Go deeper \u2192</a></div></div>`})}
+  p.act.forEach(f=>{const d=FM[f.code];h+=`<div class="fm-card active-card"><div class="fm-card-inner"><div class="fm-header"><span class="fm-code">${f.code}</span><span class="badge badge-active">Active</span></div><div class="fm-name">${f.name}</div><div class="fm-label">What this looks like</div><div class="fm-body">${d.what}</div><div class="question-box"><div class="fm-label">One question to ask Monday</div><p>\u201C${d.oneQ}\u201D</p></div>${d.cascade.length?'<div class="cascade-note">If unaddressed, this pattern feeds into '+d.cascade.map(c=>FM[c].name).join(' and ')+'.</div>':''}<a href="/fm/${f.code.toLowerCase()}" class="deeper-link" target="_blank">Read the full pattern \u2192</a></div></div>`})}
   document.getElementById('activeFMs').innerHTML=h;
   // Cascades
   h='';if(p.cas.length){h+='<div class="section-title">Patterns that reinforce each other</div>';p.cas.forEach(c=>{h+=`<div class="cascade-alert"><strong>${c.fn}</strong> \u2192 <strong>${c.tn}</strong>. These patterns feed each other.</div>`})}
@@ -474,15 +479,15 @@ function showResults(){
   // Dormant
   h='';if(p.dor.length){h+='<div class="dormant-section"><div class="dormant-title">Not currently detected</div><div class="dormant-list">'+p.dor.map(f=>f.name).join(', ')+'</div></div>'}
   document.getElementById('dormantFMs').innerHTML=h;
-  // Upsell — lens-adapted CTA
-  var ub='';
-  if(lens==='pre-entry'){
-    ub='<div class="upsell-box"><h3>Want the full structural assessment?</h3><p>This diagnostic assessed 8 of 17 structural patterns. A Pre-Entry Diagnostic covers all 17 failure modes using the full instrument, maps cascade risks, and produces a structural briefing for the search firm, PE sponsor, or candidate.</p><div style="margin-top:1.25rem"><a href="https://greenbaumlabs.com/#contact" class="cta-button" style="text-decoration:none;font-size:0.6rem">Request a Pre-Entry Diagnostic \u2192</a></div></div>';
-  } else if(lens==='investor'){
-    ub='<div class="upsell-box"><h3>Want full structural due diligence?</h3><p>This diagnostic assessed 8 of 17 structural patterns. A Portfolio Diagnostic covers all 17 failure modes, maps cascade risks across the organization, and produces a structural diligence report for your deal team or board.</p><div style="margin-top:1.25rem"><a href="https://greenbaumlabs.com/#contact" class="cta-button" style="text-decoration:none;font-size:0.6rem">Request a Portfolio Diagnostic \u2192</a></div></div>';
-  } else {
-    ub='<div class="upsell-box"><h3>Want the full picture?</h3><p>This diagnostic assessed 8 of 17 structural patterns. A Coherence Sprint covers all 17 failure modes with the full instrument, maps cascade risks, and produces a structural diagnostic of your organization in 3 to 4 weeks.</p><div style="margin-top:1.25rem"><a href="https://greenbaumlabs.com/#contact" class="cta-button" style="text-decoration:none;font-size:0.6rem">Start a Coherence Sprint \u2192</a></div></div>';
-  }
+  // Where to go next (the short assessment covers 8 of 17 patterns; the rest of the site covers the ground it does not)
+  var nextLens=lens==='investor'?'/lens/the-investor':lens==='pre-entry'?'/lens/the-new-leader':'/lens/';
+  var nextLensLabel=lens==='investor'?'Read the investor lens':lens==='pre-entry'?'Read the new-leader lens':'Find the lens for your chair';
+  var ub='<div class="upsell-box"><h3>Where to go next</h3>'+
+    '<p>These sixteen questions cover eight of the seventeen failure modes, the ones a person can answer from experience. The other nine show up in how an organization behaves over time, which is what the rest of the practice is built to look at.</p>'+
+    '<p style="margin-top:1rem"><a href="/fm/" style="color:var(--accent)">All seventeen failure modes \u2192</a><br>'+
+    '<a href="'+nextLens+'" style="color:var(--accent)">'+nextLensLabel+' \u2192</a><br>'+
+    '<a href="/tools/fm-scanner" style="color:var(--accent)">Run the FM Scanner on your own meeting notes \u2192</a><br>'+
+    '<a href="/#record" style="color:var(--accent)">How the method has been tested: the Coherence Record \u2192</a></p></div>';
   document.getElementById('upsellBox').innerHTML=ub;
 }
 function retake(){startAssessment()}

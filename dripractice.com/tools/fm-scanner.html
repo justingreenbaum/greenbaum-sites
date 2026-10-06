@@ -774,14 +774,15 @@
             <div class="header-label">DRI Practice</div>
             <h1>FM Scanner</h1>
             <p class="header-subtitle">
-                Surface structural dysfunction patterns in organizational artifacts. 
-                Transcripts, emails, meeting notes—what patterns are hiding in plain sight?
+                Review text for signs of ownership, decision, and follow-through problems.
+                Paste meeting notes, an email thread, or a transcript; the scanner flags phrases that match the seventeen failure modes and shows you the excerpts.
             </p>
         </header>
 
         <!-- How It Works -->
         <section class="how-it-works">
             <h2>How It Works</h2>
+            <p class="step-desc" style="margin:0 auto 1.5rem;max-width:720px;text-align:left"><strong>What it helps with:</strong> a first read on whether a conversation shows the patterns, before anyone has to interpret it. <strong>What you provide:</strong> any working text, from a meeting recap to a long email thread; nothing leaves your browser. Only use information you are authorized to use. <strong>What you get:</strong> the failure modes the language points to, the exact excerpts that triggered each, and which of Truth, Authority, or Continuity is carrying the load. <strong>How to use it:</strong> treat each hit as a lead. Read the excerpt, decide whether it is really that pattern, and take the strong ones to the people in the conversation.</p>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -829,6 +830,9 @@ Example signals the scanner detects:
                     <button class="scan-button" id="scanButton" onclick="runScan()">
                         Scan for Failure Modes
                     </button>
+                    <button class="scan-button" id="exampleButton" onclick="loadExample()" style="margin-top:0.6rem;opacity:0.85">
+                        Try a worked example
+                    </button>
                 </div>
             </div>
 
@@ -841,7 +845,7 @@ Example signals the scanner detects:
                 <div class="panel-body" id="resultsPanel">
                     <div class="results-empty">
                         <div class="results-empty-icon">⎔</div>
-                        <p>Paste text and click scan to detect failure mode patterns</p>
+                        <p>Paste text and click scan, or load the worked example to see what a result looks like.</p>
                     </div>
                 </div>
             </div>
@@ -858,11 +862,10 @@ Example signals the scanner detects:
                     <div class="boundary-column is-col">
                         <h3>This tool is</h3>
                         <ul>
-                            <li>A lexical pattern scanner using keyword density and regex matching</li>
-                            <li>A lead generator for further investigation</li>
-                            <li>A way to surface what might be hiding in plain sight</li>
-                            <li>A starting point for structural diagnosis</li>
-                            <li>AR-001 compliant: it observes and suggests</li>
+                            <li>A pattern scanner: keyword density and phrase matching against the seventeen failure modes</li>
+                            <li>A way to find leads worth a closer look</li>
+                            <li>A starting point for a structural conversation</li>
+                            <li>Built to observe and suggest, never to decide (the practice&rsquo;s first automation rule, AR-001)</li>
                         </ul>
                     </div>
                     <div class="boundary-column isnot-col">
@@ -882,16 +885,36 @@ Example signals the scanner detects:
         <!-- Footer -->
         <footer class="footer">
             <div class="footer-quote">"Tools that see without deciding."</div>
-            <p class="footer-note">AR-001: Observes, summarizes, suggests. Does not decide.</p>
+            <p class="footer-note">It observes, summarizes, and suggests. It does not decide.</p>
             <div class="footer-version">
                 <span>FM Scanner v0.3.1</span>
                 <span>Taxonomy v2</span>
                 <span>2026-02-03</span>
+                <span><a href="/privacy" style="color:inherit">Privacy</a> &middot; <a href="/terms" style="color:inherit">Terms</a></span>
             </div>
         </footer>
     </div>
 
     <script>
+        // Worked example: fictional operating notes written to show what a result looks like. No real company, product, or person.
+        const EXAMPLE_TEXT = `Ops sync, Tuesday. Recap for anyone who missed it.
+
+Backlog: the escalation queue is at 410 again. Priya's team is handling the ones they can, but anything over the $250 credit limit needs approval. Her words: "I'm making these calls without the authority to close them, so they sit until someone senior is free." Theo asked, "Why didn't this come up sooner?" It did; it was in the weekly report in March.
+
+Refund tooling: the fix is stuck. We need more alignment between Billing and Platform before anyone will own it, and no owner was named today either. We agreed to revisit next steps after the roadmap review.
+
+New-hire ramp: the documented process for account merges is out of date. Here's how we actually do it: Dana keeps a spreadsheet, and only Dana knows how the merge tool behaves on legacy accounts. New reps shadow her for a week before they can work the queue on their own. Nobody has time to update the doc.
+
+Metrics: the dashboard looks fine but the team leads say something feels off on the phones, and the repeat-contact number has crept up for three weeks. We are tracking it offline for now.
+
+Approvals: the vendor invoice went to the VP for sign-off again. It is under the threshold. It used to be faster, and the honest answer for why it still goes up is that we have always done it that way and nobody wants to be the one who stopped sending it.
+
+Action items: Priya to run the credit-limit proposal by Theo for a sanity check. Billing and Platform to find time to align. Dana to share the spreadsheet with the new reps.`;
+        function loadExample() {
+            document.getElementById('inputText').value = EXAMPLE_TEXT;
+            runScan();
+        }
+
         // FM definitions with Triangle vertex mapping
         // Truth: FM-04, FM-06, FM-11, FM-14, FM-17 (reality vs narrative)
         // Authority: FM-01, FM-02, FM-03, FM-07, FM-08, FM-09, FM-10, FM-16 (ownership vs diffusion)

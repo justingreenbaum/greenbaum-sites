@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Decision & Responsibility Infrastructure™ — The Practice</title>
-  <meta name="description" content="The discipline of designing, diagnosing, and maintaining the structural conditions that determine whether organizations can make good decisions and hold themselves accountable for outcomes over time.">
+  <title>Decision & Responsibility Infrastructure® — The Practice</title>
+  <meta name="description" content="The structure underneath an organization's decisions: who can decide, what they can see, and what the organization remembers. A taxonomy of seventeen failure modes, a short assessment, lenses for eighteen roles, and the research record behind them.">
   <link rel="canonical" href="https://dripractice.com/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon-32x32.png" sizes="32x32">
@@ -13,7 +13,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dripractice.com/">
-  <meta property="og:title" content="Decision & Responsibility Infrastructure™">
+  <meta property="og:title" content="Decision & Responsibility Infrastructure®">
   <meta property="og:description" content="The discipline of designing the structural conditions that determine whether organizations can make good decisions and hold themselves accountable for outcomes over time.">
   <meta property="og:site_name" content="DRI Practice">
   <meta property="og:image" content="https://dripractice.com/og-dripractice.png">
@@ -22,7 +22,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Decision & Responsibility Infrastructure™">
+  <meta name="twitter:title" content="Decision & Responsibility Infrastructure®">
   <meta name="twitter:description" content="The discipline of designing the structural conditions that determine whether organizations can make good decisions and hold themselves accountable for outcomes over time.">
   <meta name="twitter:image" content="https://dripractice.com/og-dripractice.png">
 
@@ -31,7 +31,7 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Decision & Responsibility Infrastructure™",
+    "name": "Decision & Responsibility Infrastructure®",
     "url": "https://dripractice.com",
     "description": "The discipline of designing, diagnosing, and maintaining the structural conditions that determine whether organizations can make good decisions and hold themselves accountable for outcomes over time.",
     "founder": {
@@ -510,6 +510,7 @@
       gap: 1rem;
       margin-top: 2rem;
     }
+    #start .fm-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 
     a.fm-card {
       background: var(--bg-card);
@@ -820,6 +821,7 @@
       <li><a href="#taxonomy">Taxonomy</a></li>
       <li><a href="#instruments">Instruments</a></li>
       <li><a href="#record">Record</a></li>
+      <li><a href="/diagnose">Assess</a></li>
     </ul>
     <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -831,39 +833,68 @@
     <div class="hero-bg"></div>
     <div class="hero-content">
       <p class="hero-eyebrow">A Field of Practice</p>
-      <h1>Decision &amp;<br>Responsibility<br>Infrastructure<span class="tm">™</span></h1>
-      <p class="hero-sub">The discipline of designing, diagnosing, and maintaining the structural conditions that determine whether organizations can make good decisions and hold themselves accountable for outcomes over time.</p>
+      <h1>Decision &amp;<br>Responsibility<br>Infrastructure<span class="tm">®</span></h1>
+      <p class="hero-sub">The structure underneath an organization's decisions: who can decide, what they can see, and what the organization remembers. DRI is the discipline of designing that structure, diagnosing where it has failed, and keeping it working.</p>
       <div class="hero-line"></div>
     </div>
   </div>
 
+  <!-- WAYS IN -->
+  <section id="start" class="sec-lifted">
+    <div class="section-inner reveal">
+      <div class="section-label">Start Here</div>
+      <h2>Three ways in</h2>
+      <p>Developed by <a href="https://justingreenbaum.com" style="color: var(--accent);">Justin R. Greenbaum</a>, a customer operations executive with more than twenty years leading care, technical support, and service transformation, and run as a practice at Greenbaum Labs. Pick the door that matches what you came for; the method and the research record are further down the page.</p>
+    </div>
+    <div class="fm-grid reveal" style="max-width: 1040px; margin: 2rem auto 0;">
+      <a href="/diagnose" class="fm-card">
+        <div class="fm-id">Assess</div>
+        <div class="fm-name">Try the assessment</div>
+        <div class="fm-def">Sixteen scenarios about ownership, authority, information, and follow-through in an organization you know. About five minutes. The result is a reading of your answers, and it stays in your browser.</div>
+        <div class="fm-tier">Start the assessment →</div>
+      </a>
+      <a href="/lens/" class="fm-card">
+        <div class="fm-id">Recognize</div>
+        <div class="fm-name">Explore the lenses</div>
+        <div class="fm-def">The same operating problems seen from eighteen chairs: the operator, the customer, the executive, the team putting AI into the work. Each lens is a set of situations you will recognize, with the pattern behind each one.</div>
+        <div class="fm-tier">Open the lenses →</div>
+      </a>
+      <a href="/tools/fm-scanner" class="fm-card">
+        <div class="fm-id">Try</div>
+        <div class="fm-name">Run the scanner</div>
+        <div class="fm-def">Paste meeting notes or an email thread and see which of the seventeen failure modes the language points to. If you have nothing to paste, there is a worked example to run.</div>
+        <div class="fm-tier">Open the FM Scanner →</div>
+      </a>
+    </div>
+  </section>
+
   <!-- THE FIELD -->
-  <section id="field" class="sec-lifted">
+  <section id="field">
     <div class="section-inner reveal">
       <div class="section-label">The Field</div>
       <h2>What DRI Is</h2>
 
-      <p>Decision &amp; Responsibility Infrastructure™ is the architecture of authority, accountability, and continuity that sits beneath organizational performance.</p>
+      <p>Decision &amp; Responsibility Infrastructure® is the architecture of authority, accountability, and continuity that sits beneath organizational performance.</p>
 
-      <p>It's not about teaching people to make better decisions. It's about building the structural conditions that make good decisions possible — and sustainable — in the first place.</p>
+      <p>Training people to decide better does little when the structure around them will not let a good decision stand. DRI works on that structure: the conditions that let a sound decision get made, hold, and be remembered.</p>
 
-      <p>This includes: who has the authority to decide, who bears the consequences, how decisions are remembered over time, how responsibility is distributed without diffusion, and how truth can be spoken without political cost.</p>
+      <p>In practice that means who has the authority to decide, who carries the consequences, how decisions are remembered, how responsibility is assigned without being spread so thin that nobody holds it, and whether people can say what is actually happening without paying for it.</p>
 
       <div class="thesis-block">
-        <p>Organizations rely on human beings to absorb the failures of broken systems. AI adoption will remove those buffers, exposing underlying dysfunction at scale. DRI™ makes that dysfunction visible before the buffer disappears.</p>
+        <p>Organizations often depend on people to compensate for gaps in the structure: an agent finds a workaround, a manager carries a decision nobody clearly owns, a team keeps a broken process moving by hand. As more of that work is automated, those gaps become harder to hide.</p>
       </div>
 
-      <h3>Why Organizations Fail at Scale</h3>
+      <h3>Where it breaks</h3>
 
-      <p>Organizations fail predictably when the structure beneath decision-making and accountability is poorly designed, invisible, or contradictory.</p>
+      <p>The same three breaks show up across companies, sectors, and sizes. Each is easy to recognize once it has a name, and each comes with something specific to examine.</p>
 
-      <p><strong>Authority separates from responsibility.</strong> People are held accountable for outcomes they cannot control. Decision rights are ambiguous. Ownership is diffuse. No one can act, and no one is truly responsible.</p>
+      <p><strong>Authority separates from responsibility.</strong> A team is accountable for an outcome but needs approval for the decisions that drive it. Work queues behind senior calendars, the people closest to the problem stop proposing fixes, and the senior team becomes the default place where things get resolved. Worth examining: for the last outcome you assigned an owner, which decisions did they actually control?</p>
 
-      <p><strong>Decisions are forgotten.</strong> The system loses memory of why choices were made. Rationale evaporates. Context disappears. The organization repeats the same failures because it cannot remember what it learned.</p>
+      <p><strong>Decisions are forgotten.</strong> The reason behind a policy leaves with the person who made it. The next team inherits the rule without the context, keeps it because nobody is sure it is safe to remove, and relearns the original lesson the expensive way. Worth examining: pick one standing rule and ask who can explain why it exists.</p>
 
-      <p><strong>Truth becomes politically expensive.</strong> Reality cannot be named without career risk. Signals are distorted. Feedback loops break. The gap between what is happening and what can be said grows until the organization operates on fiction.</p>
+      <p><strong>Reality gets expensive to say.</strong> The dashboard is green while the people doing the work know something is slipping. Raising it means a review, a name on a report, and a reputation for not handling things, so it does not get raised. Worth examining: what is happening right now that none of your metrics would show?</p>
 
-      <p>These are not communication failures. They are structural failures. And they compound in AI governance contexts, where decision rights about model behavior, accountability for system outcomes, and continuity of safety commitments are often invisible, contradictory, or nonexistent.</p>
+      <p>None of these needs bad intent. They are structural, which is why they survive reorganizations and new leaders, and why they get sharper once decisions about AI systems are added to the same structure: who can change a model's behavior, who answers for its outcomes, and whether the commitments made about it outlast the people who made them.</p>
     </div>
   </section>
 
@@ -922,7 +953,7 @@
         </div>
       </div>
 
-      <p style="margin-top: 2rem;">When these three vertices reinforce each other, the system operates with coherence. When they drift apart, humans absorb the cost.</p>
+      <p style="margin-top: 2rem;">When the three hold together, the organization can decide, act, and remember. When one drifts, people make up the difference by hand, and that cost rarely shows up on a report.</p>
     </div>
   </section>
 
@@ -930,82 +961,82 @@
   <section id="lens" class="lens-section sec-lifted">
     <div class="lens-header reveal">
       <div class="section-label">Entry Points</div>
-      <h2>Same system. Different lens.</h2>
-      <p style="font-size: 1rem; line-height: 1.8; color: var(--text-secondary);">Structural conditions look different from every chair. Find yours.</p>
+      <h2>Same system, eighteen chairs</h2>
+      <p style="font-size: 1rem; line-height: 1.8; color: var(--text-secondary);">The same structural conditions look different depending on where you sit. Pick the chair closest to yours.</p>
     </div>
 
     <div class="lens-grid reveal">
       <a href="/lens/01" class="lens-card">
         <div class="lens-role">The Operator</div>
-        <div class="lens-line">You own the problem. You don't own the decision.</div>
-      </a>
-      <a href="/lens/03" class="lens-card">
-        <div class="lens-role">The Executive</div>
-        <div class="lens-line">You set direction. The system reinterprets.</div>
-      </a>
-      <a href="/lens/18" class="lens-card">
-        <div class="lens-role">The Board</div>
-        <div class="lens-line">You govern what you can see. The system decides what you see.</div>
-      </a>
-      <a href="/lens/04" class="lens-card">
-        <div class="lens-role">The Chief of Staff</div>
-        <div class="lens-line">You see it all. You can't say it all.</div>
-      </a>
-      <a href="/lens/05" class="lens-card">
-        <div class="lens-role">The New Leader</div>
-        <div class="lens-line">You inherited decisions nobody can explain.</div>
-      </a>
-      <a href="/lens/06" class="lens-card">
-        <div class="lens-role">The Investor</div>
-        <div class="lens-line">The structural risk no one's pricing.</div>
-      </a>
-      <a href="/lens/11" class="lens-card">
-        <div class="lens-role">Product</div>
-        <div class="lens-line">You own the roadmap. You don't own the priorities.</div>
-      </a>
-      <a href="/lens/12" class="lens-card">
-        <div class="lens-role">Engineering</div>
-        <div class="lens-line">You shipped what was asked. It wasn't what was needed.</div>
-      </a>
-      <a href="/lens/13" class="lens-card">
-        <div class="lens-role">Sales</div>
-        <div class="lens-line">You closed the deal. The org can't deliver what you sold.</div>
-      </a>
-      <a href="/lens/14" class="lens-card">
-        <div class="lens-role">Marketing</div>
-        <div class="lens-line">You told the story. The experience didn't match.</div>
+        <div class="lens-line">Where accountability exceeds decision authority.</div>
       </a>
       <a href="/lens/02" class="lens-card">
         <div class="lens-role">The Customer</div>
-        <div class="lens-line">The experience your customer has is structural output.</div>
+        <div class="lens-line">How internal structure becomes customer experience.</div>
       </a>
-      <a href="/lens/07" class="lens-card">
-        <div class="lens-role">HR</div>
-        <div class="lens-line">You measure engagement. The structure produces disengagement.</div>
-      </a>
-      <a href="/lens/09" class="lens-card">
-        <div class="lens-role">Finance</div>
-        <div class="lens-line">The budget was approved. The constraints weren't removed.</div>
-      </a>
-      <a href="/lens/10" class="lens-card">
-        <div class="lens-role">Legal &amp; Compliance</div>
-        <div class="lens-line">You protect the org from risk. Nobody protects you from being the reason things are slow.</div>
-      </a>
-      <a href="/lens/15" class="lens-card">
-        <div class="lens-role">IT &amp; Infrastructure</div>
-        <div class="lens-line">Everything runs until it doesn't. Then it's your fault.</div>
-      </a>
-      <a href="/lens/16" class="lens-card">
-        <div class="lens-role">Procurement</div>
-        <div class="lens-line">You manage the contract. You can't manage what they deliver.</div>
-      </a>
-      <a href="/lens/17" class="lens-card">
-        <div class="lens-role">Program Management</div>
-        <div class="lens-line">You own the timeline. You don't own the dependencies.</div>
+      <a href="/lens/03" class="lens-card">
+        <div class="lens-role">The Executive</div>
+        <div class="lens-line">Where direction changes as it moves through the organization.</div>
       </a>
       <a href="/lens/08" class="lens-card">
         <div class="lens-role">AI Integration</div>
-        <div class="lens-line">Automation doesn't create dysfunction. It reveals it.</div>
+        <div class="lens-line">What automation exposes about existing ownership and control.</div>
+      </a>
+      <a href="/lens/18" class="lens-card">
+        <div class="lens-role">The Board</div>
+        <div class="lens-line">What reaches the board, and what shapes it on the way up.</div>
+      </a>
+      <a href="/lens/04" class="lens-card">
+        <div class="lens-role">The Chief of Staff</div>
+        <div class="lens-line">Seeing the whole system without the standing to name it.</div>
+      </a>
+      <a href="/lens/05" class="lens-card">
+        <div class="lens-role">The New Leader</div>
+        <div class="lens-line">Inheriting decisions, rules, and commitments nobody can explain.</div>
+      </a>
+      <a href="/lens/06" class="lens-card">
+        <div class="lens-role">The Investor</div>
+        <div class="lens-line">Structural conditions that financial diligence does not price.</div>
+      </a>
+      <a href="/lens/11" class="lens-card">
+        <div class="lens-role">Product</div>
+        <div class="lens-line">Roadmap ownership when priorities are set somewhere else.</div>
+      </a>
+      <a href="/lens/12" class="lens-card">
+        <div class="lens-role">Engineering</div>
+        <div class="lens-line">Building to the request when the request was the problem.</div>
+      </a>
+      <a href="/lens/13" class="lens-card">
+        <div class="lens-role">Sales</div>
+        <div class="lens-line">Commitments made at the deal that the organization cannot deliver.</div>
+      </a>
+      <a href="/lens/14" class="lens-card">
+        <div class="lens-role">Marketing</div>
+        <div class="lens-line">When the story outruns what customers actually experience.</div>
+      </a>
+      <a href="/lens/07" class="lens-card">
+        <div class="lens-role">HR</div>
+        <div class="lens-line">Engagement programs working against the structure that drives disengagement.</div>
+      </a>
+      <a href="/lens/09" class="lens-card">
+        <div class="lens-role">Finance</div>
+        <div class="lens-line">Approved budgets and the constraints the money never removes.</div>
+      </a>
+      <a href="/lens/10" class="lens-card">
+        <div class="lens-role">Legal &amp; Compliance</div>
+        <div class="lens-line">Risk control that becomes the reason everything is slow.</div>
+      </a>
+      <a href="/lens/15" class="lens-card">
+        <div class="lens-role">IT &amp; Infrastructure</div>
+        <div class="lens-line">Systems that run on workarounds until the day they do not.</div>
+      </a>
+      <a href="/lens/16" class="lens-card">
+        <div class="lens-role">Procurement</div>
+        <div class="lens-line">Managing the contract without authority over what gets delivered.</div>
+      </a>
+      <a href="/lens/17" class="lens-card">
+        <div class="lens-role">Program Management</div>
+        <div class="lens-line">Owning the timeline without owning the dependencies.</div>
       </a>
     </div>
   </section>
@@ -1016,22 +1047,22 @@
       <div class="section-label">Diagnostic Language</div>
       <h2>The Taxonomy</h2>
 
-      <p>Coherence uses two diagnostic primitives to make structural failure visible. <strong>Failure Modes</strong> name structurally self-reinforcing conditions that require governance intervention. <strong>Functional Field Notes</strong> surface recurring conditions while interpretation is still forming.</p>
+      <p>The taxonomy has two kinds of entries. <strong>Failure Modes</strong> are conditions that feed themselves and do not resolve without a change in structure. <strong>Functional Field Notes</strong> are the smaller, recurring conditions that usually show up first, before anyone would call them a failure.</p>
 
-      <p>17 Failure Modes. 21 Functional Field Notes. Organized into three tiers based on causal position.</p>
+      <p>Seventeen failure modes and twenty-one field notes, each with a definition, what it looks like from inside, and why it emerges. The failure modes are grouped into three tiers by where they sit in the chain of cause and effect.</p>
     </div>
 
     <div class="fm-grid reveal" style="max-width: 720px; margin: 2rem auto 0;">
       <a href="/fm/" class="fm-card">
         <div class="fm-id">17 Entries</div>
         <div class="fm-name">Failure Modes</div>
-        <div class="fm-def">Structurally self-reinforcing conditions that require governance intervention. Organized into three tiers: Foundational, Mechanism, and Terminal.</div>
+        <div class="fm-def">Conditions that feed themselves until something structural changes. Grouped into three tiers: Foundational, Mechanism, and Terminal.</div>
         <div class="fm-tier">View all →</div>
       </a>
       <a href="/ffn/" class="fm-card">
         <div class="fm-id">21 Entries</div>
         <div class="fm-name">Functional Field Notes</div>
-        <div class="fm-def">Recurring conditions observed across organizations that surface early-warning signals of structural failure.</div>
+        <div class="fm-def">Smaller recurring conditions that tend to show up before a failure mode does. Early signals, written up as field notes.</div>
         <div class="fm-tier">View all →</div>
       </a>
     </div>
@@ -1043,7 +1074,7 @@
       <div class="section-label">Diagnostic Tools</div>
       <h2>Instruments</h2>
 
-      <p>Seven instruments that observe, summarize, and suggest. They do not decide.</p>
+      <p>Seven browser-based instruments. Each one observes, summarizes, and suggests; none of them decides, and nothing you paste leaves your device. The FM Scanner is the place to start, and it has a worked example built in.</p>
 
       <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.1em; color: var(--text-dim); padding: 0.8rem 1.2rem; background: var(--accent-dim); border: 1px solid var(--border); border-radius: 4px; display: inline-block;">AR-001 — Automation may observe, summarize, and suggest. Automation may not decide.</p>
     </div>
@@ -1109,13 +1140,19 @@
 
       <p>The Coherence Record is the build record of DRI™ — published at the pace the work moves. Each edition documents what the diagnostic pipeline has found, what the methodology can and cannot see, and where the limitations are.</p>
 
-      <p>15 entities across 5 sectors. 117 diagnostic runs. FM-01 (Responsibility Compression) appearing in 14 of 15 entities. Methodology limitations disclosed. A diagnostic that measures gaps must disclose its own.</p>
+      <p>135 research runs of the diagnostic pipeline against public evidence on 31 organizations across six sectors. These are tests of the instrument, not client engagements. FM-01 (Responsibility Compression) appeared in 14 of the 15 organizations in the Edition 3 fleet read. The method's limitations are published alongside its results.</p>
 
       <div class="principle-box">
-        <p>Building in the open means publishing failures alongside successes. Edition 4 disclosed that the scoring instrument had a 0.114 standard deviation on its primary vertex — the scores were not measurements. The architecture was rebuilt. The instrument now reproduces at 0.000.</p>
+        <p>Building in the open means publishing failures alongside successes. Edition 4 disclosed that running the same organization through the instrument twice could produce different scores (a standard deviation of 0.114 on its primary dimension), which meant the scores were not yet measurements. The scoring was rebuilt, and the same inputs now produce the same result every time. That is repeatability, not proof that the findings are right, and the Record says so.</p>
       </div>
 
       <div class="fm-grid reveal" style="max-width: 720px; margin: 2rem auto 0;">
+        <a href="https://writing.justingreenbaum.com/p/the-coherence-record-edition-6" class="fm-card" target="_blank">
+          <div class="fm-id">Edition 06 · Apr 2026</div>
+          <div class="fm-name">What does good look like?</div>
+          <div class="fm-def">A pause in the build. MIT CISR's Minimum Viable Governance for generative AI, read against the seventeen failure modes: one maps what working governance looks like, the other what breaks when it is absent. The language is the contribution.</div>
+          <div class="fm-tier">Read on Substack →</div>
+        </a>
         <a href="https://writing.justingreenbaum.com/p/the-coherence-record-edition-5" class="fm-card" target="_blank">
           <div class="fm-id">Edition 05 · Mar 2026</div>
           <div class="fm-name">What's happened</div>
@@ -1185,8 +1222,8 @@
   <section>
     <div class="section-inner">
       <div class="cta-section reveal">
-        <h3>Engage With the Practice</h3>
-        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 0;">DRI™ is a field in formation. The work is public. The methodology is transparent. The canon is evolving.</p>
+        <h3>Where to go from here</h3>
+        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 0;">The work is public. Explore the <a href="/diagnose" style="color: var(--accent);">assessment</a>, the <a href="#instruments" style="color: var(--accent);">tools</a>, the <a href="#record" style="color: var(--accent);">research record</a>, or the writing behind DRI.</p>
         <div class="cta-buttons">
           <a href="https://writing.justingreenbaum.com/subscribe" class="cta-button" target="_blank">Subscribe to Field Notes</a>
           <a href="mailto:justin@greenbaumlabs.com" class="cta-button secondary">Contact</a>
@@ -1199,19 +1236,21 @@
   <section>
     <div class="section-inner reveal">
       <div class="principle-box">
-        <p>Infrastructure is only visible when it fails. The work is to make failure visible before it becomes operational crisis.</p>
+        <p>Nobody notices infrastructure until it fails. The point of this work is to find the failure while it is still a question for a staff meeting rather than a crisis.</p>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-l">© 2026 Decision & Responsibility Infrastructure™ — All Rights Reserved</div>
+    <div class="footer-l">© 2026 Decision & Responsibility Infrastructure® — All Rights Reserved</div>
     <div class="footer-r">
       <a href="https://justingreenbaum.com" target="_blank">Founder</a> ·
       <a href="https://greenbaumlabs.com" target="_blank">Labs</a> ·
       <a href="https://writing.justingreenbaum.com" target="_blank">Writing</a> ·
-      <a href="https://linkedin.com/in/justingreenbaum" target="_blank">LinkedIn</a>
+      <a href="https://linkedin.com/in/justingreenbaum" target="_blank">LinkedIn</a> ·
+      <a href="/privacy">Privacy</a> ·
+      <a href="/terms">Terms</a>
     </div>
   </footer>
 
