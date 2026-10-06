@@ -9,7 +9,7 @@ Five-site portfolio ecosystem for Justin R. Greenbaum. Static HTML, no build ste
 | Professional hub | `justingreenbaum.com/` | justingreenbaum.com | Gold (#c9a84c) |
 | Advisory & applied-AI practice (its research section is "the Lab") | `greenbaumlabs.com/` | greenbaumlabs.com | Green (#5dba5d) |
 | Photography | `greenbaumphotography.com/` | greenbaumphotography.com | Gold (#c9a84c) |
-| DRI Practice | `dripractice.com/` | dripractice.com | Gold (#c9a84c) |
+| DRI Practice | `dripractice.com/` | dripractice.com | Mint (#76dab1) |
 | Lego art studio | `megabrixels.com/` | megabrixels.com | Gold (#c9a84c) |
 
 ## Stack
