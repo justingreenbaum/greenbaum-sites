@@ -55,8 +55,8 @@
       --text-primary: #f0ece4;
       --text-secondary: #b5b0a8;
       --text-dim: #756f69;
-      --accent: #c9a84c;
-      --accent-dim: rgba(201, 168, 76, 0.12);
+      --accent: #76dab1;
+      --accent-dim: rgba(118, 218, 177, 0.12);
       --warm: #c8553a;
       --warm-dim: rgba(200, 85, 58, 0.1);
       --border: rgba(240, 236, 228, 0.10);
@@ -198,7 +198,7 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse 60% 50% at 70% 30%, rgba(201, 168, 76, 0.03), transparent),
+        radial-gradient(ellipse 60% 50% at 70% 30%, rgba(118, 218, 177, 0.03), transparent),
         radial-gradient(ellipse 40% 60% at 20% 80%, rgba(200, 85, 58, 0.02), transparent);
     }
 
@@ -276,7 +276,22 @@
       padding: 8rem 3rem;
       border-top: 1px solid var(--border);
     }
-    .sec-lifted { background: var(--bg-secondary); }
+    .sec-lifted {
+      --bg-primary: #f6f5f2;
+      --bg-secondary: #f6f5f2;
+      --bg-card: #ffffff;
+      --bg-elevated: #ffffff;
+      --text-primary: #141a16;
+      --text-secondary: #4b534e;
+      --text-dim: #7b847f;
+      --accent: #237a58;
+      --accent-dim: rgba(35, 122, 88, 0.10);
+      --warm: #b8452c;
+      --warm-dim: rgba(184, 69, 44, 0.08);
+      --border: rgba(20, 26, 22, 0.10);
+      --border-hover: rgba(20, 26, 22, 0.22);
+      background: var(--bg-primary);
+    }
     .sec-lifted .lens-card { background: var(--bg-elevated); }
 
     .section-inner {
@@ -913,7 +928,7 @@
           <svg viewBox="0 0 320 260" style="width: 100%; height: 100%;">
             <defs>
               <linearGradient id="edge-gold" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#c9a84c"/>
+                <stop offset="0%" style="stop-color:#76dab1"/>
                 <stop offset="100%" style="stop-color:#4a4744"/>
               </linearGradient>
               <linearGradient id="edge-gray" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -922,13 +937,13 @@
               </linearGradient>
               <linearGradient id="edge-return" x1="100%" y1="100%" x2="0%" y2="0%">
                 <stop offset="0%" style="stop-color:#8a8580"/>
-                <stop offset="100%" style="stop-color:#c9a84c"/>
+                <stop offset="100%" style="stop-color:#76dab1"/>
               </linearGradient>
             </defs>
             <line x1="160" y1="30" x2="40" y2="220" stroke="url(#edge-gold)" stroke-width="2"/>
             <line x1="40" y1="220" x2="280" y2="220" stroke="url(#edge-gray)" stroke-width="2"/>
             <line x1="280" y1="220" x2="160" y2="30" stroke="url(#edge-return)" stroke-width="2"/>
-            <circle cx="160" cy="30" r="10" fill="#c9a84c"/>
+            <circle cx="160" cy="30" r="10" fill="#76dab1"/>
             <circle cx="40" cy="220" r="8" fill="none" stroke="#4a4744" stroke-width="2"/>
             <circle cx="280" cy="220" r="8" fill="none" stroke="#8a8580" stroke-width="2"/>
           </svg>

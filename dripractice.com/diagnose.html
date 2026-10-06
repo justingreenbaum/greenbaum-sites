@@ -19,7 +19,7 @@
 :root{
 --bg-primary:#0a0a0a;--bg-secondary:#111111;--bg-card:#181818;--bg-elevated:#1a1a1a;
 --text-primary:#f0ece4;--text-secondary:#b5b0a8;--text-dim:#756f69;
---accent:#c9a84c;--accent-dim:rgba(201,168,76,0.12);
+--accent:#76dab1;--accent-dim:rgba(118, 218, 177,0.12);
 --warm:#c8553a;--warm-dim:rgba(200,85,58,0.1);
 --border:rgba(240,236,228,0.06);--border-hover:rgba(240,236,228,0.12);
 --serif:'Cormorant Garamond',Georgia,serif;
@@ -444,7 +444,7 @@ function showResults(){
   // Triangle
   const tc=document.getElementById('triangleContainer');
   const cx=170,ty=30,blx=40,bly=270,brx=300,bry=270;
-  const tC=p.vx.truth.score>=.6?'#c9a84c':'#c8553a',aC=p.vx.authority.score>=.6?'#c9a84c':'#c8553a',cC=p.vx.continuity.score>=.6?'#c9a84c':'#c8553a';
+  const tC=p.vx.truth.score>=.6?'#76dab1':'#c8553a',aC=p.vx.authority.score>=.6?'#76dab1':'#c8553a',cC=p.vx.continuity.score>=.6?'#76dab1':'#c8553a';
   tc.innerHTML=`<svg viewBox="0 0 340 310" class="triangle-svg">
     <defs><filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
     <polygon points="${cx},${ty} ${blx},${bly} ${brx},${bly}" fill="none" stroke="rgba(240,236,228,0.06)" stroke-width="1"/>
