@@ -1,17 +1,17 @@
 # justingreenbaum.com
 
-> Personal site of Justin R. Greenbaum — customer experience transformation executive, former Comcast Vice President, and founder of Greenbaum Labs. Twenty years leading national and global customer operations: digital and social CX, CX operating models, global service operations and high-trust functions, now extended through applied AI.
+> Personal site of Justin R. Greenbaum, a customer operations and experience executive who leads and transforms complex customer operations, and founder of Greenbaum Labs. More than 20 years in customer operations, frontline technical support to Vice President at Comcast: customer care, contact centers, technical support, global partner operations, digital service and customer intelligence, with applied AI as leverage.
 
 ## About Justin
-- Customer experience transformation executive; Comcast 2005–2025, frontline to Vice President
-- Founder, Greenbaum Labs — independent applied-AI lab running on owned infrastructure
-- MIT Sloan AI Executive Academy, NVIDIA infrastructure training, Prosci Certified Change Practitioner
+- Customer operations and experience executive; Comcast 2005–2025, frontline technical support to Vice President
+- Founder, Greenbaum Labs, an independent advisory and applied-AI practice
+- MIT Sloan AI Executive Academy, NVIDIA Academy AI Infrastructure Professional Workshop, Prosci Change Management Practitioner Program
 - Creator of the Coherence diagnostic framework
 
 ## Key Pages
 - [Home](https://justingreenbaum.com/): Executive positioning, scope, where he creates value, selected work
 - [Experience](https://justingreenbaum.com/about): Career arc, signature outcomes, education and credentials
-- [Selected Work](https://justingreenbaum.com/selected-work): Five case studies with condition, role, action, and documented outcome
+- [Selected Work](https://justingreenbaum.com/selected-work): Six case studies with condition, role, action, and outcome
 - [AI & Customer Experience](https://justingreenbaum.com/selected-work/ai-cx): Answer-engine measurement, AI system evaluation, global delivery, the portfolio operating model
 - [Operating Method](https://justingreenbaum.com/operating-method): How he diagnoses operating failure — truth, authority, continuity
 
@@ -22,7 +22,7 @@
 - Technical and diagnostic work lives at greenbaumlabs.com
 
 ## Related Properties
-- [Greenbaum Labs](https://greenbaumlabs.com): independent applied-AI lab — organizational diagnostics, evidence systems, decision infrastructure
+- [Greenbaum Labs](https://greenbaumlabs.com): independent advisory and applied-AI practice: organizational diagnostics, evidence systems, decision infrastructure
 - [Writing](https://writing.justingreenbaum.com): Essays on systems, responsibility, and governance
 - [Greenbaum Photography](https://greenbaumphotography.com): Fine art and documentary photography
 - [Megabrixels](https://megabrixels.com): Lego photography

@@ -1,12 +1,12 @@
 # greenbaumlabs.com
 
-> Greenbaum Labs is a personal AI workshop running on local compute. Founded by Justin R. Greenbaum. Builds diagnostic systems, analytical frameworks, and AI instruments for measuring organizational alignment. All inference runs on owned hardware — no cloud dependency.
+> Greenbaum Labs is an independent advisory and applied-AI practice founded by Justin R. Greenbaum. It builds organizational diagnostics, evidence systems and decision infrastructure. Its Lab publishes the experiments, benchmarks and methods behind them. All inference runs on owned hardware.
 
 ## Primary Project: Coherence Diagnostic Engine (GL-001)
 Measures alignment between what organizations say (center) and what the world observes (edge). Produces structured diagnostic reports scoring on Truth, Authority, and Continuity using the Coherence Triangle. Product category: Decision & Responsibility Infrastructure (DRI).
 
 ## Key Pages
-- [Home](https://greenbaumlabs.com/): Workshop overview, infrastructure, projects, instruments, operating principles
+- [Home](https://greenbaumlabs.com/): What the practice works on, the three questions, the instrument, current lab work, founder
 - [The Field](https://greenbaumlabs.com/field): Orientation map of diagnostic and record regions
 - [How the Instrument Works](https://greenbaumlabs.com/method): Measurement model behind the Coherence Scan — scoring, adversarial debate, evidence lineage
 - [Multi-Agent Pipeline](https://greenbaumlabs.com/pipeline): Architecture of the six-agent Coherence Diagnostic Pipeline
@@ -15,12 +15,6 @@ Measures alignment between what organizations say (center) and what the world ob
 - [Agentforce](https://greenbaumlabs.com/agentforce): Personnel roster — 6 autonomous agents + 1 human architect
 - [Sample Scan: Consumer Fintech](https://greenbaumlabs.com/sample-scan): Coherence Weather Map of a high-growth fintech — what organizational physics look like measured
 - [Case Study: Diagnostic Engine](https://greenbaumlabs.com/case-study-diagnostic-engine): Technical deep-dive on the Coherence engine
-
-## Diagnostic Offerings (Case Demonstrations)
-- [Coherence in Residence](https://greenbaumlabs.com/residence): Fractional Chief Customer Officer / COO seat for customer operations — two days a week, embedded, diagnostic-first
-- [Coherence Sprint](https://greenbaumlabs.com/case/coherence-sprint): What a Coherence Sprint reveals for leaders navigating structural dysfunction
-- [Portfolio Diagnostic](https://greenbaumlabs.com/case/portfolio): What a Portfolio Diagnostic surfaces for PE firms evaluating acquisitions
-- [Pre-Entry Diagnostic](https://greenbaumlabs.com/case/pre-entry): What a Pre-Entry Diagnostic surfaces before an executive hire accepts a role
 
 ## Coherence Lens — 18 Role Perspectives
 - [Lens Landing](https://greenbaumlabs.com/lens): Same system, different lens — 18 seats, 90 reveals
@@ -54,7 +48,7 @@ Measures alignment between what organizations say (center) and what the world ob
 5. Build ahead of demand
 
 ## Related Properties
-- [Justin Greenbaum](https://justingreenbaum.com): Personal advisory site and DRI thesis
+- [Justin Greenbaum](https://justingreenbaum.com): Executive profile, experience and selected work
 - [Writing](https://writing.justingreenbaum.com): Essays on coherence and governance
 - [Greenbaum Photography](https://greenbaumphotography.com): Documentary photography
 - [Megabrixels](https://megabrixels.com): Lego photography

@@ -93,7 +93,7 @@ Seven tools that observe, summarize, and suggest. They do not decide.
 Justin R. Greenbaum — [justingreenbaum.com](https://justingreenbaum.com)
 
 ## Related Properties
-- [Greenbaum Labs](https://greenbaumlabs.com): AI workshop powering the diagnostic pipeline
+- [Greenbaum Labs](https://greenbaumlabs.com): Independent advisory and applied-AI practice; its Lab builds and runs the diagnostic pipeline
 - [Writing](https://writing.justingreenbaum.com): Essays and the Coherence Record on Substack
 - [LinkedIn](https://linkedin.com/in/justingreenbaum)
 
