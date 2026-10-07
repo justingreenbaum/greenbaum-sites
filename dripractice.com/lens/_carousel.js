@@ -47,7 +47,7 @@
         fmLabel: card.querySelector('.fm-label'),
         prompt: card.querySelector('.prompt'),
         promptBtn: card.querySelector('.prompt-button'),
-        pct: 15,
+        pct: initialPct(),
         dragging: false,
         startX: 0,
         startPct: 0,
@@ -84,6 +84,9 @@
     positionCards(true);
     syncFragmentToCard(index);
   }
+
+  // Starting reveal: a slim strip on phones so it stays clear of the centred text column.
+  function initialPct() { return window.innerWidth <= 768 ? 6 : 15; }
 
   // ---- Slider position logic ----
   function setSliderPosition(s, p) {
@@ -300,7 +303,7 @@
   // ---- Init ----
   positionCards(false);
   for (var i = 0; i < sliders.length; i++) {
-    setSliderPosition(sliders[i], 15);
+    setSliderPosition(sliders[i], initialPct());
   }
   applyDeeplinkOnLoad();
 })();
