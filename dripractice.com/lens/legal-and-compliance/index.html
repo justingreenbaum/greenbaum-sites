@@ -566,6 +566,27 @@
       .carousel-nav { bottom: 0.3rem; }
       .carousel-arrow { width: 36px; height: 36px; font-size: 0.9rem; }
     }
+    /* ========== MOBILE OVERLAP FIX ========== */
+    @media (max-width: 768px) {
+      .header { padding: 2.6rem 1rem 0; }
+      .header-label { font-size: 0.5rem; letter-spacing: 0.18em; white-space: normal; text-align: center; line-height: 1.6; }
+      .layer-content {
+        left: 17%; right: 5%; width: auto; max-width: none; transform: none;
+        top: 4.5rem; bottom: 13rem;
+        justify-content: flex-start;
+      }
+      .layer-content > :first-child { margin-top: auto; }
+      .layer-content > :last-child { margin-bottom: auto; }
+      .layer-headline { font-size: 1.35rem; line-height: 1.3; }
+      .layer-body { font-size: 0.95rem; line-height: 1.5; }
+      .fm-label { left: 17%; right: 5%; width: auto; transform: none; bottom: 5.5rem; padding: 0; }
+      .fm-code { font-size: 0.6rem; margin-bottom: 0.5rem; }
+      .fm-line { font-size: 0.85rem; line-height: 1.4; max-width: none; }
+      .footer-left { left: 1rem; bottom: 3.1rem; }
+      .footer-right { right: 1rem; bottom: 3.1rem; max-width: calc(100% - 10rem); text-align: right; }
+      .carousel-nav { bottom: 0.4rem; }
+      .handle { left: calc(15% - 27px); }
+    }
   </style>
   <script defer src="/lens/_nav.js"></script>
   <!-- Vercel Web Analytics -->
